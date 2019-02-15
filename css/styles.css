@@ -1,17 +1,18 @@
 * {
     color: midnightblue;
-    background-color: sandybrown;
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
+body {
+    background-color: #2F6B5C;
+}
 
-background-image { 
-    background-image: url(src/images/background.jpg);
+.container { 
+    background-image: url("../images/background.jpg");
     background-repeat: no-repeat;
-    background-position: center;
-    width: 600px;
-    height: 800px;
+    background-position: 100%, 50%; 
+    background-size: 100%;
    
 }
 html {
@@ -23,12 +24,13 @@ html {
 .container {
 
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     margin: 2rem;
     width: 95%;
 }
 
 .sidenav {
+    background-color: sandybrown;
     width: 180px;
     position: fixed;
     top: 2rem;
@@ -63,19 +65,28 @@ a:hover {
 }
 
 .main {
-
+  
     display: flex;
     flex-direction: column;
     margin-left: 200px;
     /* Same width as the sidebar + left position in px */
 }
-
-.main h1, .main h2, .main h3 {
+.main h2, .main h3 {
     text-align: center;
 }
 .main h2, .main h3 {
     margin-top: 1rem;
     margin-bottom: 1rem;
+}
+.main h1 {
+    text-align: center;
+    color: sandybrown;
+    text-shadow: -2px 0 #00142E, 0 2px #00142E, 2px 0 #00142E, 0 -2px #00142E;
+    margin-bottom: 1rem;
+}
+.photos {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
 }
 
 footer small {
@@ -85,22 +96,39 @@ footer small {
 
 img {
     width: 100%;
-    height: auto;
+    height: 100%;
+
 }
 
-figure {
+figure.batman {
+    position: relative;
+    height: 100.5%;
+    width: 300px;
+    display: block;
+    margin-left: 50px;
+    margin-right: 50px;
+    border: 10px;
+    border-color: #2F6B5C;
+    border-style: solid;
+}
+figure.proffesional {
     position: relative;
     width: 300px;
     display: block;
-    margin-left: auto;
-    margin-right: auto;
+    margin-left: 165px;
+    margin-right: 50px;
+    border: 10px;
+    border-color: #2F6B5C;
+    border-style: solid;
 }
+
 
 ul {
     list-style-type: none;
 }
 
 .aboutMeSection {
+    background-color: sandybrown;
     border: 4px;
     border-color: midnightblue;
     border-style: solid;
@@ -116,14 +144,16 @@ ul {
     padding-bottom: 1rem;
 }
 
-#pageIntro {
-    margin-top: .5rem;
-    margin-bottom: 1rem;
-    text-align: center;
-}
+
 .projectSection{
-    display: flex;
+    background-color: sandybrown;
+    border: 4px;
+    margin-left: 23rem; 
+    margin-right: 23rem;
+    padding-bottom: 1rem;
+    border-color: midnightblue;
+    border-style: solid;
+    display: block;
     flex-direction: column;
     text-align: center;
-
 }
