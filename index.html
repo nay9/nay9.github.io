@@ -1,70 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
 
-    <!DOCTYPE html>
-    <html lang="en">
+<head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <meta http-equiv="X-UA-Compatible" content="ie=edge">
+            <title>Rene Garcia</title>
+            <link rel="stylesheet" href="./css/indexstyle.css">
 
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <title>Rene Garcia</title>
-        <link rel="stylesheet" href="./css/indexstyle.css">
-    </head>
+</head>
+<!-- header -->
+<header>
+    <nav class="menu_drop">
+    <button class="menu_toggle"><strong>MENU</button></strong>
+        <ul class="menu_items hide">
+            <li class="menu_item"><a href="https://nay9.github.io"><strong>Home<strong></a></li>
+        </ul>
+    </nav>
+</header>
+<!-- close header -->
 
-    <div class="hero">
-    <img class="hero_img" src="./images/hero.jpg">
-    <img class="hero_me" src="./images/professional.jpg">
-    <h1 class="hero_title">René Garcia</h1>
+
+
+
+<!-- hero image and title -->
+<div class="hero">
+            <img class="hero_img" src="./images/hero.jpg">
+            <h1 class="hero_title">René Garcia</h1>
+</div> 
+<!-- close "hero" -->
+
+
+<!-- my pictures and slideshow -->
+<div class="hero_me">
+    <div class="mySlides">
+                <div class="numbertext">1 / 3</div>
+                <img class="me" src="./images/professional1.jpg">
     </div>
 
-    <body>
+    <div class="mySlides"> 
+                <div class="numbertext">2 / 3</div>
+                <img class="me" src="./images/me.jpg">
+    </div>
 
-    <div class="wrapper">
+    <div class="mySlides">
+                <div class="numbertext">3 / 3</div>
+                <img class="me" src="./images/colorRun1.jpg">
+    </div>
+
+                <!-- next and back buttons, still part of "hero_me" -->
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+<!-- close "hero_me" -->
+
+<body>
+    <div class="wrapper">  <!-- big box with all the main text -->
         <div class="intro">
+                <h2 class="intro_text">I am a full-stack junior software developer bringing technical solutions in a fast and effective manner. Goal oriented and quick thinking, I seek to bring my military leadership experience and logical thinking into the tech world.</h2>
+                <button id="bioBtn">Click here to see a more indepth bio.</button>
+                            <div id="bioModal" class="modal">   <!-- hidden by default -->
+                                <div class="modal-content">
+                                <h1>My Bio</h1>
+                                <p>insert a bio here</p>
+                                </div> <!-- close project description -->
+                            </div> <!-- end modal-->
+        </div>
+    <div class="wrapper_column">    <!-- medium box thats gona hold tech stack and projects -->
+        <div class ="wrapper_column_stack">
+                    <h2 class="wrapper_column_stack_title">Tech Stack</h2>
+        	        <p class="wrapper_column_stack_text">Java • Spring • JavaScript • HTML5 • CSS3 • Flexbox • Grid • TDD • Agile (Scrum) • Object Oriented Programming (OOP) • AJAX • JSON • Restful APIs • Responsive Design / Mobile • Structured Query Language (SQL) • Relational Databases • Source Control / Git •  Microsoft Office • Electronics Troubleshooting, Diagnostics, & Root Cause Analysis</p>
+        <!-- modal stuff starts-->
+        <button id="sillyBtn">Click here to see the "Avengers Initiative" quote.</button>
+                            <div id="sillyModal" class="modal">   <!-- hidden by default -->
+                                <div class="modal-content">
+                                <p>"There was an idea, Stark knows this, called the Avengers Initiative. The idea was to bring together a group of remarkable people, see if they could become something more. See if they could work together when we needed them to. To fight the battles we never could." ― Nick Fury</p>
+                                </div> <!-- close project description -->
+                            </div> <!-- end modal-->
+                            
+        </div> 
+        <!-- close tech stack "wrapper_column_stack" -->
+
+
+        <section>   <!-- this section will hold all the project stuff -->
+            <div class="wrapper_column_img"> <!-- starts a section for projects i did alone -->
+                <h2>My Projects:</h2>
+                <div class="projects_flex"> <!-- making a row that can hold 2 projects-->
+                        <div class="project_column"> <!-- making a column for TextAdventrue-->
+                            <a href="https://github.com/nay9/FirstTextAdventure" target="_blank">
+                            <img class="textRPG" src="./images/text-adventure.png"></a>
+                            <!-- modal stuff starts-->
+                            <button id="myBtn1">Description</button>
+                            <div id="myModal1" class="modal"> <!-- hidden by default -->
+                                <div class="modal-content">
+                                <h2>My First Text Adventure Game</h2>
+                                <p>A Java console game utilizing a series of loops, a random number generator, and an array, to create a battle sequence that resembles many other text-based RPGs.</p>
+                                </div> <!-- close project description -->
+                            </div> <!-- end modal-->
+                        </div>  <!-- end column for first project -->
+
+                        <div class="project_column"> <!-- making a column for HospitalGame, still in "projects_flex"-->
+                            <a href="https://github.com/nay9/HospitalGame" target="_blank">
+                            <img class="HospitalGame" src="./images/hospitalGame.png"></a>
+                            <!-- modal stuff starts-->
+                            <button id="myBtn2">Description</button>
+                            <div id="myModal2" class="modal">   <!-- hidden by default -->
+                                <div class="modal-content">
+                                <h2>Hospital Game</h2>
+                                <p>A Java console game that mimics the management of a hospital. This project was built to display competence with Hava.</p>
+                                </div> <!-- close project description -->
+                            </div> <!-- end modal-->
+                        </div>  <!-- end column for second project -->
+                </div>  <!-- end projects_flex row for first 2 projects -->
+
+            <div class="wrapper_column_img"> <!-- starts a section for projects i colaborated on -->
+                <h2>Team Projects:</h2>
+                <div class="projects_flex"> <!-- making a row that can hold 2 projects-->
+                        <div class="project_column">  <!-- making a column for VirtualPet, still in "projects_flex"-->
+                            <a href="https://github.com/jessicawright/VirtualPet" target="_blank">
+                            <img class="VirtualPet" src="./images/VirtualPet.png"></a>
+                            <!-- modal stuff starts -->
+                            <button id="myBtn3">Description</button>
+                            <div id="myModal3" class="modal">   <!-- hidden by default -->
+                                <div class="modal-content">
+                                <h2>Virtual Pet Game</h2>
+                                <p>A tomagachi style, Java console game. This project was built in an Agile setting with a team of 4 wonderful individuals and myself. TDD driven, this project displays Java competency through varius methodologies.</p>
+                                </div> <!-- close project description -->
+                            </div> <!-- end modal-->
+                        </div>  <!-- end column for third project -->
+
+                        <div class="project_column">  <!-- making a column for ColumbusBeer, still in "projects_flex"-->
+                            <a href="https://github.com/Parker-Bartlett/columbus-beer" target="_blank">
+                            <img class="ColumbusBeer" src="./images/beerColumbus.png"></a>
+                            <!-- modal stuff starts -->
+                            <button id="myBtn4">Description</button>
+                            <div id="myModal4" class="modal">
+                                <div class="modal-content">
+                                <h2>Columbus Beer Website</h2>
+                                <p>A web forum style application used to display competency with Spring, Java, Thymeleaf, HTML, and CSS. Built in an Agile setting with a team of 5 wonderful individuals and myself.</p>
+                                </div> <!-- close project description -->
+                            </div> <!-- end modal-->
+                        </div>  <!-- end column for fourth project -->
+                </div>  <!-- closes "projects_flex-"-->
+            </div>  <!-- closes "wrapper_column_img -->
+        </section>  <!-- closes all project stuff-->
+    </div>  <!-- closes "wrapper_column", the medium box with text-->
+
+    <div class="links"> <!--links div-->
+        <div class="logos">
+            <!--github-->
+            <a href="https://github.com/nay9" target="_blank">
+            <img class="github" src="./images/GitHub-Mark-64px.png"></a>
             
-            <h2 class="intro_text">I am a full-stack junior software developer bringing technical solutions in a fast and effective manner. Goal Oriented and quick thinking, I seek to bring my military leadership experience and logical thinking into the tech world.</h2>
+            <!-- linked in -->      
+            <a href="https://www.linkedin.com/in/rene-garcia-807b21175/" target="_blank">
+            <img class="linkedIn" src="./images/linkedIn.png"></a>
+                            
+            <!-- email -->                
+            <a href="mailto:renenoe94@hotmail.com" target="_blank">
+            <img class="mail" src="./images/email.png"></a>
         </div>
-        <div class="wrapper_column">
-    	<div class ="wrapper_column_stack">
-            <h2 class="wrapper_column_stack_title">Tech Stack</h2>
-    	<p class="wrapper_column_stack_text">Java • Spring • JavaScript • HTML5 • CSS3 • Flexbox • Grid • TDD • Agile (Scrum) • Object Oriented Programming (OOP) • AJAX • JSON • Restful APIs • Responsive Design / Mobile • Structured Query Language (SQL) • Relational Databases • Source Control / Git •  Microsoft Office • Electronics Troubleshooting, Diagnostics, & Root Cause Analysis</p>
-    	</div>
-        <section>
-        <div class="wrapper_column_img">
-            <h2>My Projects</h2>
-            <a href="https://github.com/nay9/FirstTextAdventure" target="_blank">
-            <img class="textRPG" src="./images/text-adventure.png"></a>
+    </div>  <!-- close "links" div-->
 
-            <a href="https://github.com/nay9/HospitalGame" target="_blank">
-            <img class="HospitalGame" src="./images/hospitalGame.png"></a>
-        </div>
+    <div class="box footer">Rene Garcia © 2019</div>
+    
+    </div>  <!-- closes "wrapper", the big box-->
 
-        <div>
-            <h2>Projects I have Contributed to</h2>
-            <a href="https://github.com/jessicawright/VirtualPet" target="_blank">
-            <img class="VirtualPet" src="./images/VirtualPet.png"></a>
+</body>
 
+<script src="./scripts/main.js"></script>
 
-             <a href="https://github.com/Parker-Bartlett/columbus-beer" target="_blank">
-            <img class="ColumbusBeer" src="./images/beerColumbus.png"></a>
-        </div>
-        </section>
-        </div>
-
-        <div class="links">
-                <div class="logos">
-                        <a href="https://github.com/nay9" target="_blank">
-                        <img class="github" src="./images/GitHub-Mark-64px.png"></a>
-                    
-                        <a href="https://www.linkedin.com/in/rene-garcia-807b21175/" target="_blank">
-                        <img class="linkedIn" src="./images/linkedIn.png"></a>
-                        
-                        <a href="mailto:renenoe94@hotmail.com" target="_blank">
-                        <img class="mail" src="./images/email.png"></a>
-                </div>
-        </div>
-        <div class="box footer">René Garcia © 2019</div>
-    </div>
-
-    </body>
-
-    </html>
+</html>
