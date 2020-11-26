@@ -1,143 +1,138 @@
 <!DOCTYPE html>
-<html lang="en">
-
-<head>
-            <meta charset="UTF-8">
-            <meta name="viewport" content="width=device-width, initial-scale=1.0">
-            <meta http-equiv="X-UA-Compatible" content="ie=edge">
-            <title>Rene Garcia</title>
-            <link rel="stylesheet" href="./css/indexstyle.css">
-
-</head>
-<!-- header
-<header>
-    <nav class="menu_drop">
-    <button class="menu_toggle"><strong>MENU</button></strong>
-        <ul class="menu_items hide">
-            <li class="menu_item"><a href="https://nay9.github.io"><strong>Home<strong></a></li>
-        </ul>
-    </nav>
-</header>
- close header -->
-
-
-
-
-<!-- hero image and title -->
-<div class="hero">
-            <img class="hero_img" src="./images/hero.jpg">
-            <h1 class="hero_title">René Garcia</h1>
-</div> 
-<!-- close "hero" -->
-
-
-<!-- my pictures and slideshow -->
-<div class="hero_me">
-    <div class="mySlides">
-                <div class="numbertext">1 / 3</div>
-                <img class="me" src="./images/professional1.jpg">
-    </div>
-
-    <div class="mySlides"> 
-                <div class="numbertext">2 / 3</div>
-                <img class="me" src="./images/me.jpg">
-    </div>
-
-    <div class="mySlides">
-                <div class="numbertext">3 / 3</div>
-                <img class="me" src="./images/colorRun1.jpg">
-    </div>
-
-                <!-- next and back buttons, still part of "hero_me" -->
-                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-                <a class="next" onclick="plusSlides(1)">&#10095;</a>
-</div>
-<!-- close "hero_me" -->
-
-<body>
-    <div class="wrapper">  <!-- big box with all the main text -->
-        <div class="intro">
-                <h2 class="intro_text">I am a full-stack junior software developer bringing technical solutions in a fast and effective manner. Goal oriented and quick thinking, I seek to bring my military leadership experience and logical thinking into the tech world.</h2>                  
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Chaoo Charles | Front-End Developer</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script
+      src="https://kit.fontawesome.com/836a943e18.js"
+      crossorigin="anonymous"
+    ></script>
+  <body>
+    <header>
+      <div class="container">
+        <nav>
+          <div class="nav-brand">
+            <a href="index.html">
+            </a>
+          </div>
+          <div class="burger-menu-icon">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+          </div>
+          <ul class="nav-list">
+            <li class="nav-item">
+              <a href="#landing-page">
+                <img
+                  src="images/me.jpg"
+                  alt="Rene Garcia"
+                  class="profile-pic nav-link"
+                />
+                <span class="caption nav-link">René Garcia</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="#about" class="nav-link">About</a>
+            </li>
+            <!-- <li class="nav-item">
+              <a href="#projects" class="nav-link">Projects</a>
+            </li> -->
+            <li class="nav-item">
+                <a href="https://github.com/nay9" class="nav-link" target="_blank">Github</a>
+              </li>
+            <li class="nav-item">
+              <a href="#contact" class="nav-link">Contact</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <section id="landing-page" class="landing-page">
+        <div class="container">
+          <div class="main-message">
+            <h2>René Garcia</h2>
+            <h3>Software Engineer</h3>
+            <p>C# - Java - JavaScript</p>
+            <p>.Net - Spring - React</p>
+            <div>
+              <a href="#about" class="scroll-down">
+                <i class="fa fa-anchor" aria-hidden="true"></i>
+              </a>
+            </div>
+          </div>
         </div>
-    <div class="wrapper_column">    <!-- medium box thats gona hold tech stack and projects -->
-        <div class ="wrapper_column_stack">
-                    <h2 class="wrapper_column_stack_title">Tech Stack</h2>
-        	        <p class="wrapper_column_stack_text">Java • Spring • JavaScript • HTML5 • CSS3 • Flexbox • Grid • TDD • Agile (Scrum) • Object Oriented Programming (OOP) • AJAX • JSON • Restful APIs • Responsive Design / Mobile • Structured Query Language (SQL) • Relational Databases • Source Control / Git •  Microsoft Office • Electronics Troubleshooting, Diagnostics, & Root Cause Analysis</p>
-        </div> 
-        <!-- close tech stack "wrapper_column_stack" -->
-
-
-        <section>   <!-- this section will hold all the project stuff -->
-            <div class="wrapper_column_img"> <!-- starts a section for projects i did alone -->
-                <h2>My Projects:</h2>
-                <div class="projects_flex"> <!-- making a row that can hold 2 projects-->
-                        <div class="project_column"> <!-- making a column for TextAdventrue-->
-                            <p><strong>First Text Adventure Game</strong></p>
-                            <a href="https://github.com/nay9/FirstTextAdventure" target="_blank">
-                            <img class="textRPG" src="./images/text-adventure.png"></a>
-                            <div> <!-- description --> 
-                                <p>A Java console game utilizing a series of loops, a random number generator, and an array, to create a battle sequence that resembles many other text-based RPGs.</p>
-                            </div> <!-- end description-->
-                        </div>  <!-- end column for first project -->
-
-                        <div class="project_column"> <!-- making a column for HospitalGame, still in "projects_flex"-->
-                            <p><strong>Hospital Game</strong></p>
-                            <a href="https://github.com/nay9/HospitalGame" target="_blank">
-                            <img class="HospitalGame" src="./images/hospitalGame.png"></a>
-                            <!-- description-->
-                            <div>
-                                <p>A Java console game that mimics the management of a hospital. This project was built to display competence with Java.</p>
-                            </div> <!-- end modal-->
-                        </div>  <!-- end column for second project -->
-                </div>  <!-- end projects_flex row for first 2 projects -->
-
-            <div class="wrapper_column_img"> <!-- starts a section for projects i colaborated on -->
-                <h2>Team Projects:</h2>
-                <div class="projects_flex"> <!-- making a row that can hold 2 projects-->
-                        <div class="project_column">  <!-- making a column for VirtualPet, still in "projects_flex"-->
-                            <p><strong>Virtual Pet Game</strong></p>
-                            <a href="https://github.com/jessicawright/VirtualPet" target="_blank">
-                            <img class="VirtualPet" src="./images/VirtualPet.png"></a>
-                                <div>
-                                <p>A tomagachi style, Java console game. This project was built in an Agile setting with a team of 4 wonderful individuals and myself. TDD driven, this project displays Java competency through varius methodologies.</p>
-                                </div> <!-- close project description -->
-                        </div>  <!-- end column for third project -->
-
-                        <div class="project_column">  <!-- making a column for ColumbusBeer, still in "projects_flex"-->
-                            <p><strong>Columbus Beer Website</strong></p>
-                            <a href="https://github.com/Parker-Bartlett/columbus-beer" target="_blank">
-                            <img class="ColumbusBeer" src="./images/beerColumbus.png"></a>
-                                <div>
-                                <p>A web forum style application used to display competency with Spring, Java, Thymeleaf, HTML, and CSS. Built in an Agile setting with a team of 5 wonderful individuals and myself.</p>
-                                </div> <!-- close project description -->
-                        </div>  <!-- end column for fourth project -->
-                </div>  <!-- closes "projects_flex-"-->
-            </div>  <!-- closes "wrapper_column_img -->
-        </section>  <!-- closes all project stuff-->
-    </div>  <!-- closes "wrapper_column", the medium box with text-->
-
-    <div class="links"> <!--links div-->
-        <div class="logos">
-            <!--github-->
-            <a href="https://github.com/nay9" target="_blank">
-            <img class="github" src="./images/GitHub-Mark-64px.png"></a>
-            
-            <!-- linked in -->      
-            <a href="https://www.linkedin.com/in/rene-garcia-807b21175/" target="_blank">
-            <img class="linkedIn" src="./images/linkedIn.png"></a>
-                            
-            <!-- email -->                
-            <a href="mailto:renenoe94@hotmail.com" target="_blank">
-            <img class="mail" src="./images/email.png"></a>
+      </section>
+      <section id="about" class="about">
+        <div class="container">
+          <div class="about-img">
+            <img
+              src="images/camping.jpg"
+              alt="Me"
+              class="about-pic"
+            />
+          </div>
+          <div class="about-text-box">
+            <h2>Hi there!</h2>
+            <p>
+                I am a full-stack junior software developer bringing technical solutions in a fast and effective manner. Goal oriented and quick thinking, I seek to bring my military leadership experience and logical thinking into the tech world.
+            </p>
+            <p>
+              I'm currently working on expanding my knowledge of the IT world by obtaining some industry certifications. Currently I'm working on my Sec+ and attending college part time to finsih my degree in Computer Science.  
+            </p>
+            <p>
+              On my off time, I like to spend time outdoors. I like to take some time to unwind by hiking and camping.
+            </p>
+          </div>
         </div>
-    </div>  <!-- close "links" div-->
-
-    <div class="box footer">Rene Garcia © 2019</div>
-    
-    </div>  <!-- closes "wrapper", the big box-->
-
-</body>
-
-<script src="./scripts/main.js"></script>
-
+        <hr />
+      </section>
+      <!-- <section id="projects" class="projects">
+        <div class="title-heading">
+          <h2>PROJECTS</h2>
+          <p>these are some of my projects</p>
+        </div>
+        <div class="project-item">
+          <div class="project-description">
+            <h2></h2>
+            <p>
+              
+            </p>
+            <a href="#" class="project-link" target="_blank"
+              ><i class="fa fa-github" aria-hidden="true"> View Code</i></a
+            >
+          </div>
+        </div>
+      </section> -->
+      <section id="contact" class="contact">
+        <h2>Contact</h2>
+        <div class="container">
+          <p>
+            <a href="mailto:renenoe94@hotmail.com"
+              ><i class="fas fa-envelope-open"></i> renenoe94@hotmail.com</a
+            >
+          </p>
+          <p>
+            <a href="https://github.com/nay9" target="_blank"><i class="fab fa-github"> Github</i></a>
+          </p>
+        </div>
+        <hr />
+      </section>
+      <footer>
+        <div class="footer-nav">
+          <a href="#landing-page" class="footer-nav-link">Home</a>
+          <a href="#about" class="footer-nav-link">About</a>
+          <a href="https://github.com/nay9" class="footer-nav-link" target="_blank">Github</a>
+          <a href="#contact" class="footer-nav-link">Contact</a>
+        </div>
+        <div class="footer">
+          <p>Thanks for stopping by!</p>
+        </div>
+      </footer>
+    </main>
+    <script src="main.js"></script>
+  </body>
 </html>
